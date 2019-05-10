@@ -97,3 +97,9 @@
 /*---  Colors  ---*/
 @primaryColorActive        : var(--accent-color-active);
 @lightPrimaryColorActive   : var(--light-accent-color-active);
+
+/*---  Tertiary  ---*/
+@primaryTertiaryColor        : var(--accent-tertiary-color);
+@primaryTertiaryColorHover   : var(--accent-tertiary-color-hover);
+@primaryTertiaryColorFocus   : var(--accent-tertiary-color-focus);
+@primaryTertiaryColorActive  : var(--accent-tertiary-color-active);
