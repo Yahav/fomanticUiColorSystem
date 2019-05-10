@@ -1,5 +1,5 @@
 /*******************************
-     Site Global Variables
+     User Global Variables
 *******************************/
 
 @primaryColor        : var(--accent-color);
