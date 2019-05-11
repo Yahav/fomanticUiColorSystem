@@ -23,8 +23,9 @@
        Links
 --------------------*/
 
-@linkColor           : var(--accent-link-color);
 @linkHoverColor      : var(--accent-link-hover-color);
+@linkColor           : var(--accent-link-color);
+
 
 /*-------------------
   Highlighted Text
