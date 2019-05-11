@@ -1,4 +1,8 @@
 /*******************************
+     User Global Variables
+*******************************/
+
+/*******************************
          Site Settings
 *******************************/
 
@@ -50,10 +54,10 @@
     Brand Colors
 --------------------*/
 
-@primaryColor        : @blue;
+@primaryColor        : var(--accent-color);
 @secondaryColor      : @black;
 
-@lightPrimaryColor   : @lightBlue;
+@lightPrimaryColor   : var(--light-accent-color);
 @lightSecondaryColor : @lightBlack;
 
 /* Whenever a color needs to get calculated (screen()/multiply()) out of a base color */
@@ -95,10 +99,10 @@
 --------------------*/
 
 /* Used on inputs, textarea etc */
-@focusedFormBorderColor: #85B7D9;
+@focusedFormBorderColor: var(--light-accent-color);
 
 /* Used on dropdowns, other larger blocks */
-@focusedFormMutedBorderColor: #96C8DA;
+@focusedFormMutedBorderColor: var(--light-accent-color);
 
 /*-------------------
         Sizes
@@ -140,9 +144,9 @@
        Links
 --------------------*/
 
-@linkColor           : #4183C4;
+@linkColor           : var(--accent-link-color);
 @linkUnderline       : none;
-@linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
+@linkHoverColor      : var(--accent-link-hover-color);
 @linkHoverUnderline  : @linkUnderline;
 
 /*-------------------
@@ -174,7 +178,7 @@
   Highlighted Text
 --------------------*/
 
-@highlightBackground      : #CCE2FF;
+@highlightBackground      : var(--accent-highlight-bg-color);
 @highlightColor           : @textColor;
 
 @inputHighlightBackground : rgba(100, 100, 100, 0.4);
@@ -261,7 +265,7 @@
 @white            : #FFFFFF;
 
 /*--- Colored Backgrounds ---*/
-@primaryBackground   : #DFF0FF;
+@primaryBackground   : var(--accent-bg-color);
 @secondaryBackground : #F4F4F4;
 @redBackground    : #FFE8E6;
 @orangeBackground : #FFEDDE;
@@ -278,7 +282,7 @@
 @blackBackground  : #F4F4F4;
 
 /*--- Colored Headers ---*/
-@primaryHeaderColor   : darken(@primaryTextColor, 5);
+@primaryHeaderColor   : var(--accent-header-color);
 @secondaryHeaderColor : darken(@secondaryTextColor, 5);
 @redHeaderColor    : darken(@redTextColor, 5);
 @oliveHeaderColor  : darken(@oliveTextColor, 5);
@@ -295,7 +299,7 @@
 @blackHeaderColor  : darken(@blackTextColor, 5);
 
 /*--- Colored Text ---*/
-@primaryTextColor   : @invertedTextColor;
+@primaryTextColor   : var(--accent-text-color);
 @secondaryTextColor : @invertedTextColor;
 @redTextColor       : @red;
 @orangeTextColor    : @orange;
@@ -312,7 +316,7 @@
 @blackTextColor     : @black;
 
 /*--- Light Colored Text ---*/
-@lightPrimaryTextColor   : @invertedTextColor;
+@lightPrimaryTextColor   : var(--accent-light-text-color);
 @lightSecondaryTextColor : @invertedTextColor;
 @lightRedTextColor       : @lightRed;
 @lightOrangeTextColor    : @lightOrange;
@@ -365,7 +369,7 @@
 @blackBorderColor     : @blackTextColor;
 
 /*--- Shadows ---*/
-@primaryRibbonShadow: darken(@primaryColor, 10);
+@primaryRibbonShadow: var(--accent-color-darkened-10);
 @secondaryRibbonShadow: darken(@secondaryColor, 10);
 @redRibbonShadow: darken(@red, 10);
 @orangeRibbonShadow: darken(@orange, 10);
@@ -381,7 +385,7 @@
 @greyRibbonShadow: darken(@grey, 10);
 @blackRibbonShadow: darken(@black, 10);
 
-@primaryInvertedRibbonShadow: darken(@lightPrimaryColor, 10);
+@primaryInvertedRibbonShadow: var(--light-accent-color-darkened-10);
 @secondaryInvertedRibbonShadow: darken(@lightSecondaryColor, 10);
 @redInvertedRibbonShadow: darken(@lightRed, 10);
 @orangeInvertedRibbonShadow: darken(@lightOrange, 10);
@@ -988,9 +992,9 @@
 ;
 
 /*---  Colors  ---*/
-@primaryColorHover        : saturate(darken(@primaryColor, 5), 10, relative);
+@primaryColorHover        : var(--accent-hover-color);
 @secondaryColorHover      : saturate(lighten(@secondaryColor, 5), 10, relative);
-@lightPrimaryColorHover   : saturate(darken(@lightPrimaryColor, 10), 10, relative);
+@lightPrimaryColorHover   : var(--light-accent-hover-color);
 @lightSecondaryColorHover : saturate(lighten(@lightSecondaryColor, 10), 10, relative);
 
 @redHover                 : saturate(darken(@red, 5), 10, relative);
@@ -1052,9 +1056,9 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColorFocus        : saturate(darken(@primaryColor, 8), 20, relative);
+@primaryColorFocus        : var(--accent-focus-color);
 @secondaryColorFocus      : saturate(lighten(@secondaryColor, 8), 20, relative);
-@lightPrimaryColorFocus   : saturate(darken(@lightPrimaryColor, 8), 20, relative);
+@lightPrimaryColorFocus   : var(--light-accent-focus-color);
 @lightSecondaryColorFocus : saturate(lighten(@lightSecondaryColor, 8), 20, relative);
 
 @redFocus                 : saturate(darken(@red, 8), 20, relative);
@@ -1115,9 +1119,9 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColorDown        : darken(@primaryColor, 10);
+@primaryColorDown        : var(--accent-color-darkened-10);
 @secondaryColorDown      : lighten(@secondaryColor, 10);
-@lightPrimaryColorDown   : darken(@lightPrimaryColor, 10);
+@lightPrimaryColorDown   : var(--light-accent-hover-color-darkened-10);
 @lightSecondaryColorDown : lighten(@lightSecondaryColor, 10);
 
 @redDown                 : darken(@red, 10);
@@ -1178,9 +1182,9 @@
 --------------------*/
 
 /*---  Colors  ---*/
-@primaryColorActive        : saturate(darken(@primaryColor, 5), 15, relative);
+@primaryColorActive        : var(--accent-color-active);
 @secondaryColorActive      : saturate(lighten(@secondaryColor, 5), 15, relative);
-@lightPrimaryColorActive   : saturate(darken(@lightPrimaryColor, 5), 15, relative);
+@lightPrimaryColorActive   : var(--light-accent-color-active);
 @lightSecondaryColorActive : saturate(lighten(@lightSecondaryColor, 5), 15, relative);
 
 @redActive                 : saturate(darken(@red, 5), 15, relative);
@@ -1236,10 +1240,10 @@
 @darkWhiteActive           : darken(@darkWhite, 5);
 
 /*---  Tertiary  ---*/
-@primaryTertiaryColor        : saturate(@primaryColor, 20%);
-@primaryTertiaryColorHover   : desaturate(@primaryColorHover, 20%);
-@primaryTertiaryColorFocus   : desaturate(@primaryColorFocus, 20%);
-@primaryTertiaryColorActive  : saturate(@primaryColorActive, 20%);
+@primaryTertiaryColor        : var(--accent-tertiary-color);
+@primaryTertiaryColorHover   : var(--accent-tertiary-color-hover);
+@primaryTertiaryColorFocus   : var(--accent-tertiary-color-focus);
+@primaryTertiaryColorActive  : var(--accent-tertiary-color-active);
 @secondaryTertiaryColor      : saturate(@secondaryColor, 20%);
 @secondaryTertiaryColorHover : desaturate(@secondaryColorHover, 20%);
 @secondaryTertiaryColorFocus : desaturate(@secondaryColorFocus, 20%);
@@ -1299,7 +1303,7 @@
 
 
 /*---  Bright  ---*/
-@primaryBright        : screen(@lightPrimaryColor,@blendingBaseColor);
+@primaryBright        : var(--accent-bright-color);
 @secondaryBright      : screen(@lightSecondaryColor,@blendingBaseColor);
 @redBright            : screen(@lightRed,@blendingBaseColor);
 @orangeBright         : screen(@lightOrange,@blendingBaseColor);
@@ -1315,7 +1319,7 @@
 @greyBright           : @lightGrey;
 @blackBright          : @lightBlack;
 
-@primaryBrightHover   : screen(@lightPrimaryColorHover,@blendingBaseColor);
+@primaryBrightHover   : var(--light-accent-bright-color);
 @secondaryBrightHover : screen(@lightSecondaryColorHover,@blendingBaseColor);
 @redBrightHover       : screen(@lightRedHover,@blendingBaseColor);
 @orangeBrightHover    : screen(@lightOrangeHover,@blendingBaseColor);
