@@ -17,6 +17,8 @@
 @focusedFormMutedBorderColor: var(--light-accent-color);
 
 
+@invertedContentLinkColor: var(--accent-inverted-content-link-color);
+
 /*-------------------
        Links
 --------------------*/
@@ -103,3 +105,7 @@
 @primaryTertiaryColorHover   : var(--accent-tertiary-color-hover);
 @primaryTertiaryColorFocus   : var(--accent-tertiary-color-focus);
 @primaryTertiaryColorActive  : var(--accent-tertiary-color-active);
+
+@primaryBright        : var(--accent-bright-color);
+@primaryBrightHover   : var(--light-accent-bright-color);
+
